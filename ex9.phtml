@@ -1,0 +1,20 @@
+<script>
+	var bompPop = {
+		wrapping: 'plastic',
+		flavors: ['Cherry', 'Lime', 'Blue Raspberry']
+	};
+
+	console.log(Object.isFrozen(bompPop));
+
+	delete bompPop.wrapping;
+
+	console.log(bompPop.wrapping);
+
+	Object.freeze(bompPop);
+
+	delete bompPop.flavors;
+
+	console.log(bompPop.flavors);
+
+	console.log(Object.isFrozen(bompPop));
+</script>

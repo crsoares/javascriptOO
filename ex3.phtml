@@ -1,0 +1,14 @@
+<script>
+	var car = {};
+
+	Object.defineProperty(car, 'wheels', {
+		value: 4,
+		writable: false
+	});
+
+	console.log(car.wheels);
+
+	car.wheels = 5;
+
+	console.log(car.wheels);
+</script>
