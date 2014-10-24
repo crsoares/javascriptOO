@@ -1,0 +1,17 @@
+<script>
+	var foo = {
+		bar: 'baz'
+	};
+
+	var foo2 = Object.create(Object.prototype, {
+		bar: {
+			writable: true,
+			configurable: true,
+			value: 'baz'
+		}
+	});
+
+	console.log(foo.bar);
+
+	console.log(foo2.bar);
+</script>

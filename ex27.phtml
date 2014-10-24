@@ -1,0 +1,30 @@
+<script>
+	var Animal, cat, dog;
+
+	Animal = function(inLove) {
+		this.lovesHumans = inLove;
+	};
+
+	cat = new Animal();
+	dog = new Animal(true);
+
+	try {
+		console.log(cat.jump());
+	} catch(e) {}
+
+	Animal.prototype.jump = function() {
+		return "how high?!";
+	};
+
+	console.log(cat.jump());
+
+	console.log(dog.jump());
+
+	cat.jump = function() {
+		return "no";
+	};
+
+	console.log(cat.jump());
+
+	console.log(dog.jump());
+</script>

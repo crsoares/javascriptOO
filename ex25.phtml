@@ -1,0 +1,13 @@
+<script>
+	var Animal, cat, dog;
+
+	Animal = function(inLove) {
+		this.lovesHumans = inLove || false;
+	};
+
+	cat = new Animal();
+	dog = new Animal(true);
+
+	console.log(cat.lovesHumans);
+	console.log(dog.lovesHumans);
+</script>

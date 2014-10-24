@@ -1,0 +1,13 @@
+<script>
+	var ziplockBag = {};
+
+	console.log(Object.isSealed(ziplockBag) === true);
+
+	console.log(Object.isExtensible(ziplockBag));
+
+	Object.seal(ziplockBag);
+
+	console.log(Object.isSealed(ziplockBag) === true);
+
+	console.log(Object.isExtensible(ziplockBag));
+</script>

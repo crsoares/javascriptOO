@@ -1,0 +1,21 @@
+<script>
+	var car = {
+		doors: 4
+	};
+
+	console.log(Object.isExtensible(car) === true);
+
+	Object.preventExtensions(car);
+
+	console.log(Object.isExtensible(car) === true);
+
+	console.log(car.doors);
+
+	delete car.doors;
+
+	console.log(car.doors);
+
+	car.tires = 4;
+
+	console.log(car.tires);
+</script>
