@@ -1,0 +1,13 @@
+<script>
+	var sum = function() {
+		var len = arguments.length,
+			total = 0;
+
+		for(var x = 0; x < len; x++) {
+			total += arguments[x];
+		}
+		return total;
+	}
+
+	console.log(sum(1, 2, 3));
+</script>

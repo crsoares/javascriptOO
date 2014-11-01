@@ -1,0 +1,25 @@
+<script>
+	;!function() {
+		var triumph = false,
+			cake = false,
+			satisfaction = 0,
+			isLine,
+			note;
+
+		//Bloco usado como parte de uma expressão de função
+		var isLine = function(val) {
+			return val === false;
+		}
+		//Bloco usado como parte de uma instrução condicional
+		if(isLine(cake)) {
+			triumph = true;
+			makeNote('huge success');
+			satisfaction += 10;
+		}
+		//Bloco usado como parte de uma declaração de função
+		function makeNote(message) {
+			note = message;
+		}
+		console.log(satisfaction);
+	}(); 
+</script>

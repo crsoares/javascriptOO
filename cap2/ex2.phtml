@@ -1,0 +1,18 @@
+<script>
+	var object = {
+		'foo': 'bar'
+	};
+	num = 1;
+	//Passado por referência
+	;!function(obj) {
+		obj.foo = 'baz';
+	}(object);
+
+	console.log(object);
+
+	;!function(num) {
+		num = 2;
+	}(num);
+
+	console.log(num);
+</script>

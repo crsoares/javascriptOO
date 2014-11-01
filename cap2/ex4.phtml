@@ -1,0 +1,11 @@
+<script>
+	var sum = function() {
+		var total = 0;
+		while(arguments.length > 0) {
+			total += arguments.pop();
+		}
+		return total;
+	}
+
+	console.log(sum(1, 2, 3));
+</script>
